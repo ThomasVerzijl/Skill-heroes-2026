@@ -1,0 +1,140 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+
+  font-family: Sans-serif;
+}
+
+header {
+  background-color: rgb(19, 153, 198);
+  height: 10rem;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.nav-item {
+  margin: 10px;
+  cursor: pointer;
+  transition-duration: 500ms;
+}
+.nav-item:hover {
+  color: #c90808;
+}
+
+.logo {
+  width: auto;
+  height: 70%;
+  object-fit: fill;
+  padding: 20px;
+}
+
+.hero {
+  background-image: url(./assets/hero.jpg);
+  height: 120vh;
+  background-repeat: no-repeat;
+}
+.hero-content {
+  width: 100%;
+  height: 100%;
+}
+h2 {
+  margin: 0;
+  padding-top: 20rem;
+  font-size: 40px;
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+.hero-sub {
+  padding-top: 3rem;
+}
+.counter {
+  background-color: #1e1e1e;
+  padding: 3rem;
+  width: 4rem;
+  margin-top: 5rem;
+}
+#counters-cont {
+  display: flex;
+  justify-content: space-around;
+}
+#destination-button {
+  cursor: pointer;
+  margin-left: 44vw;
+  background-color: #1e1e1e;
+  border: 1px solid #1e1e1e;
+  border-radius: 3px;
+  width: 10rem;
+  height: 4rem;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition-duration: 500ms;
+}
+#destination-button:hover {
+  background-color: #353535;
+}
+.locations-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.location-card {
+  width: 30rem;
+  height: 25rem;
+  border: 1px solid #1e1e1e;
+  border-radius: 15px;
+  margin: 2rem;
+  padding: 1rem;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.location-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.15);
+}
+.city-bookings-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.location-image {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+  border-radius: 10px;
+  border: solid #1e1e1e 1px;
+}
+.destination-title {
+  margin-top: 8Fl0px;
+  font-size: 2rem;
+}
+
+/* counters */
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+#bestemmingen {
+  transition: --num 5s;
+  counter-set: num var(--num);
+  font: 800 40px system-ui;
+}
+#bestemmingen::after {
+  content: counter(num);
+}
+#bestemmingen:hover {
+  --num: 120;
+}

@@ -1,0 +1,16 @@
+Navigatie items:
+- Home
+- Bestemmingen
+- Aanbiedingen
+- Over ons
+- Contact
+
+Hero:
+- Titel: Ontdek de wereld met DreamDestinations
+- Subtitel: De mooiste bestemmingen wereldwijd. Voor iedere reiziger de perfecte reis.
+- Button: Bekijk bestemmingen
+
+Counter animatie:
+- 4000+ reizigers
+- 120 bestemmingen
+- 98% tevreden klanten
