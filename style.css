@@ -4,7 +4,7 @@ html {
 body {
   padding: 0px;
   margin: 0px;
-
+  background-color: #cef7f7;
   font-family: Sans-serif;
 }
 
@@ -98,6 +98,7 @@ h3 {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+  background-color: white;
 }
 .location-card:hover {
   transform: translateY(-8px);
